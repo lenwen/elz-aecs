@@ -35,10 +35,12 @@ namespace aecs.srv.server
 
             //TODO 5    Check starting values
             #region Check starting values
+            
             Debug.Notic("Checking starting values");
             if ((this.RunningModeConsole) && (this.RunningModeService))
             {
                 runApplication = false;
+                Debug.Error("Both RunningModeConsole and RunningModeService cant be true");
 
             }
 
