@@ -14,9 +14,12 @@ namespace aecs.srv.console_starter
 
             aecs.srv.server.Starter aecStarter = new Starter();
             aecStarter.RunningModeConsole = true;
-            aecStarter.Debug = true;
+            aecStarter.DebugEnable = true;
             aecStarter.Run();
 
+
+            Console.WriteLine("Press to exit");
+            Console.ReadLine();
 
         }
     }
